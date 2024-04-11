@@ -2,6 +2,8 @@
 	"name": "server",
 	"type": "module",
 	"scripts": {
-		"serve": "bun run ./src/index.ts"
-	}
+    "dev": "wrangler dev src/index.ts --test-scheduled",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "trigger": "curl \"http://localhost:8787/__scheduled?cron=*+*+*+*+*\""
+  }
 }

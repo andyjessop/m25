@@ -1,0 +1,16 @@
+name = "m25"
+main = "src/index.ts"
+compatibility_date = "2024-04-05"
+
+[triggers]
+crons = ["* * * * *"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "b248f9ff5eb34a35920753458e810301"
+preview_id = "a036d0fd0a1e4e979411dd4d82b9f09e"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "m25-prod"
+database_id = "9c8adda3-a72a-40f6-b999-4363423af56c"

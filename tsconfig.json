@@ -16,6 +16,7 @@
 
 		// Best practices
 		"strict": true,
-		"skipLibCheck": true
+		"skipLibCheck": true,
+    "types": ["@cloudflare/workers-types"]
 	}
 }

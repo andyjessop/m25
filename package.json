@@ -1,13 +1,21 @@
 {
-	"name": "bun-playground",
-	"license": "ISC",
-	"type": "module",
-	"scripts": {
-		"serve": "bun run --cwd ./apps/server serve"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.6.2",
-		"@types/bun": "^1.0.10"
-	},
-	"workspaces": ["apps/*", "packages/*"]
+  "name": "bun-playground",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "server:dev": "bun run --cwd ./apps/server dev",
+    "server:trigger": "bun run --cwd ./apps/server trigger"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.2",
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "@types/bun": "^1.0.10"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.1.0",
+    "@octokit/types": "^13.4.0",
+    "hono": "^4.2.3",
+    "wrangler": "^3.48.0"
+  },
+  "workspaces": ["apps/*", "packages/*"]
 }
